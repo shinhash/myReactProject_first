@@ -26,6 +26,7 @@ class App extends Component {
       <div>
         <div>test view</div>
         <Counter />
+        test
       </div>
     );
   }
