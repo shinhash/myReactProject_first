@@ -13,6 +13,12 @@ class Counter extends Component {
 
   render() {
     const { name, number } = this.state;
+    const onClickEvent = () => {
+      clickEvent();
+    };
+    function clickEvent() {
+      alert("click!!!");
+    }
     return (
       <div>
         My nick name is {name}
@@ -24,6 +30,7 @@ class Counter extends Component {
         >
           PUSH
         </button>
+        <button onClick={onClickEvent}>click</button>
       </div>
     );
   }
