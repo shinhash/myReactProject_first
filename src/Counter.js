@@ -13,9 +13,6 @@ class Counter extends Component {
 
   render() {
     const { name, number } = this.state;
-    function countUp() {
-      this.setState({ number: number + 1 });
-    }
     return (
       <div>
         My nick name is {name}
