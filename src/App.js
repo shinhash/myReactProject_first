@@ -19,14 +19,16 @@ import Counter from "./Counter";
 /* use App.js to class */
 class App extends Component {
   render() {
+    //alert("test");
     //const name = "hash";
     //const number = 10;
     //var animalNameArr = ["t", "a", "c"];
     return (
       <div>
         <div>test view</div>
-        <Counter />
         test
+        <MyComponent />
+        <Counter />
       </div>
     );
   }
