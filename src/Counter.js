@@ -1,4 +1,4 @@
-import { string } from "prop-types";
+import { String } from "prop-types";
 import React, { Component } from "react";
 
 class Counter extends Component {
@@ -13,14 +13,31 @@ class Counter extends Component {
 
   render() {
     const { name, number } = this.state;
-    const num = 0;
-    function plus() {}
-    function minus() {}
+    function plus() {
+      tempfunc("plus");
+    }
+    function minus() {
+      tempfunc("minus");
+    }
+
+    const tempfunc = (value) => {
+      if (value === "plus") {
+        this.setState({
+          number: number + 1
+        });
+      }
+      if (value === "minus") {
+        this.setState({
+          number: number - 1
+        });
+      }
+    };
+
     return (
       <div>
         My nick name is {name}
         <div>{number}</div>
-        <button onClick={plus}>PUSH</button>
+        <button onClick={plus}>Plus</button>
         <button onClick={minus}>Minus</button>
       </div>
     );
