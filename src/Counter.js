@@ -13,6 +13,7 @@ class Counter extends Component {
 
   render() {
     const { name, number } = this.state;
+    const num = 0;
     function plus() {}
     function minus() {}
     return (
