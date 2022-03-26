@@ -13,24 +13,14 @@ class Counter extends Component {
 
   render() {
     const { name, number } = this.state;
-    const onClickEvent = () => {
-      clickEvent();
-    };
-    function clickEvent() {
-      alert("click!!!");
-    }
+    function plus() {}
+    function minus() {}
     return (
       <div>
         My nick name is {name}
         <div>{number}</div>
-        <button
-          onClick={() => {
-            this.setState({ number: number + 1 });
-          }}
-        >
-          PUSH
-        </button>
-        <button onClick={onClickEvent}>click</button>
+        <button onClick={plus}>PUSH</button>
+        <button onClick={minus}>Minus</button>
       </div>
     );
   }
