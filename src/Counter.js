@@ -1,4 +1,4 @@
-import { String } from "prop-types";
+import { string } from "prop-types";
 import React, { Component } from "react";
 
 class Counter extends Component {
